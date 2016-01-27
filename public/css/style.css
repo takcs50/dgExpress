@@ -1,0 +1,63 @@
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+    padding-top: 50px;
+}
+
+#team {
+    color: #0000A0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+#logo {
+    height: 35px;
+    margin-top: -5px;
+    width: auto;
+}
+
+#logo:hover {
+    -webkit-animation-name: rotation;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 2s;
+    animation-name: rotation;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+
+}
+
+@-webkit-keyframes rotation {
+    0% {
+        -webkit-transform: rotateY(0deg);
+    }
+    50% {
+        -webkit-transform: rotateY(180deg);
+    }
+    100% {
+        -webkit-transform: rotateY(360deg);
+    }
+}
+
+@keyframes rotation {
+    0% {
+        -moz-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+    50% {
+        -moz-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+    100% {
+        -moz-transform: rotateY(360deg);
+        -o-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
+
+#teamTitle {
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
