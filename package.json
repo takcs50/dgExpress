@@ -1,7 +1,7 @@
 {
   "name": "expressejstemplates",
   "version": "1.0.0",
-  "description": "Using template EJS for lynda express tutorial",
+  "description": "Using template EJS for dgwebsite2 ExpressJs practice",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,5 +10,9 @@
   "dependencies": {
     "ejs": "^2.4.1",
     "express": "^4.13.4"
-  }
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "main": "app.js"
 }

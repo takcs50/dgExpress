@@ -1,6 +1,10 @@
 var express = require('express');
 var app = express();
 
+// openshift server configuration
+var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080
+var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
+
 // To use EJS Template Engine with Express
 app.set('view engine', 'ejs');
 
@@ -28,6 +32,11 @@ app.get('*', function(req, res) {
     res.send('<h3 style="color: #2A2AD7; text-align: center;">Bad Route</h3>');
 });
 
-var server = app.listen(3000, function() {
+/*var server = app.listen(3000, function() {
     console.log('Listening on port 3000');
+});*/
+
+// for deployment to openshift
+server.listen(server_port, server_ip_address, function () {
+  console.log( "Listening on " + server_ip_address + ", server_port " + port )
 });
