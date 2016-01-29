@@ -32,11 +32,7 @@ app.get('*', function(req, res) {
     res.send('<h3 style="color: #2A2AD7; text-align: center;">Bad Route</h3>');
 });
 
-/*var server = app.listen(3000, function() {
-    console.log('Listening on port 3000');
-});*/
-
-// for deployment to openshift
-var server = app.listen(port, ipaddr, function () {
-  console.log( "Listening on " + ipaddr + ", server_port " + port );
+// server ports for deployment to openshift or for localhost
+app.listen(port, ipaddr, function () {
+  console.log("Listening on " + ipaddr + ", server_port " + port);
 });
