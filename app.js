@@ -2,8 +2,8 @@ var express = require('express');
 var app = express();
 
 // openshift server configuration
-app.set('port', process.env.OPENSHIFT_NODEJS_PORT || 8080);
-app.set('ipaddr', process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1");
+var port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
+var ipaddr = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
 
 // To use EJS Template Engine with Express
 app.set('view engine', 'ejs');
