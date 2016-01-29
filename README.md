@@ -1,2 +1,2 @@
-# dgExpressEJS
-Developers' Guild Express EJS practice site
+# dgExpress
+Developers' Guild ExpressJS practice site
